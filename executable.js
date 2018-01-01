@@ -1,8 +1,5 @@
-const brain = processor();
-const service = {assemble : assembler()};
 
-const cards = [title(service.assemble), total(service.assemble)];
-
+app = brain.process(memory);
 $(document).ready(function(){
-	$('body').prepend($(brain.process(cards)));
+	$('body').prepend($(app));
 });
